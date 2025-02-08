@@ -133,16 +133,16 @@
   left: 38%;
   padding-inline: 1%;
   border: 1px solid burlywood;
-  background: rgba(247, 247, 247, 0.9);
+  background: rgb(255, 255, 255, 0.9);
   color: #1781df;
   overflow: auto;
-  display: none;
+  /* display: none; */
 }
 
 #contents h1 {
   font-size: 2vw;
   text-align: center;
-  border-bottom: 1px solid #d4cfcf;
+  border-bottom: 1px solid  #cea7a7;
 }
 
 ol {
@@ -154,7 +154,8 @@ li {
   font-size: 1.5vw;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #806060;
+  gap: 2%;
+  border-bottom: 1px solid #cea7a7;
 }
 
 li::before {
@@ -163,7 +164,7 @@ li::before {
   margin-right: 0.4vw;
 }
 
-a {
+.content a {
   width: 100%;
   text-decoration: none;
   color: #474242;
@@ -179,4 +180,8 @@ a {
 
 .content-list span {
   font-size: 1vw;
+}
+
+.delete {
+  color: #fa3333;
 }
