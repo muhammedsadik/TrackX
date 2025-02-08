@@ -25,7 +25,7 @@
 
 .container div span {
   position: absolute;
-  font-size: 26px;
+  font-size: 1.6vw;
   color: #fad29f;
   box-shadow: 0px 4px 10px #221322;
 }
@@ -53,7 +53,7 @@
 
 .bedroom span {
   top: 35%;
-  left: 15.8%;
+  left: 18%;
   background-color: #ccb5b533;
   text-shadow: 4px 4px 10px #000000;
 }
