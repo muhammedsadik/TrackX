@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.container {
+  width: 100vw;
+  max-width: 768px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.content-area {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.top-first-door,
+.top-second-door,
+.top-middle,
+.top-right {
+  cursor: pointer;
+  position: absolute;
+  top: 34.2%;
+  padding-block: 16.52%;
+}
+
+.top-first-door {
+  left: 5.2%;
+  padding-inline: 6.07%;
+  background: rgba(151, 231, 46, 0.5);
+}
+
+.top-second-door {
+  left: 17.4%;
+  padding-inline: 6.1%;
+  background: rgba(4, 68, 243, 0.5);
+}
+
+.top-middle {
+  left: 29.72%;
+  padding-inline: 25.34%;
+  background: rgba(231, 5, 252, 0.5);
+}
+
+.top-right {
+  left: 80.55%;
+  padding-inline: 6.35%;
+  background: rgba(2, 250, 217, 0.5);
+}
+
+.bottom-first,
+.bottom-second,
+.bottom-third,
+.bottom-fourth,
+.bottom-fifth,
+.bottom-sixth,
+.bottom-eighth {
+  cursor: pointer;
+  position: absolute;
+  top: 67.9%;
+  padding-block: 8.2%;
+  padding-inline: 6.24%;
+}
+
+.bottom-first {
+  left: 5.21%;
+  padding-block: 3.8%;
+  padding-inline: 12.24%;
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.bottom-second {
+  top: 76%;
+  left: 5.21%;
+  padding-block: 4%;
+  padding-inline: 12.24%;
+  background: rgba(252, 1, 189, 0.5);
+}
+
+.bottom-third {
+  left: 29.71%;
+  background: rgba(22, 94, 153, 0.5);
+}
+
+.bottom-fourth {
+  left: 42.39%;
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.bottom-fifth {
+  left: 55.1%;
+  background: rgba(80, 167, 29, 0.5);
+}
+
+.bottom-sixth {
+  left: 67.8%;
+  background: rgba(232, 103, 44, 0.5);
+}
+
+.bottom-eighth {
+  left: 80.5%;
+  background: rgba(49, 9, 224, 0.5);
+}
+
+
+
+
+
+
+
+
+
+#modal {
+  position: absolute;
+  top: 25%;
+  left: 18%;
+  width: 20%;
+  padding-inline: 1%;
+  border: 1px solid burlywood;
+  background: rgba(136, 112, 240, 0.5);
+}
+
+#modal h1{
+  font-size: 90%;
+  color: aliceblue;
+  text-align: center;
+  border-bottom: 1px solid cornflowerblue;
+}
+
+.content {
+  color: aliceblue;  
+  display: flex
+  
+}
+
+.content h2{
+  font-size: 90%;
+}
+
+.content span{
+  font-size: 30%;
+}
