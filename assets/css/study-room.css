@@ -127,20 +127,20 @@
 
 #contents {
   position: absolute;
-  width: 12.12%;
+  width: 33%;
   max-height: 33%;
-  top: 34.2%;
-  left: 5.2%;
+  top: 22%;
+  left: 38%;
   padding-inline: 1%;
   border: 1px solid burlywood;
-  background: rgba(136, 112, 240, 0.5);
-  color: aliceblue;
+  background: rgba(247, 247, 247, 0.9);
+  color: #1781df;
   overflow: auto;
   display: none;
 }
 
 #contents h1 {
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-align: center;
   border-bottom: 1px solid #d4cfcf;
 }
@@ -153,6 +153,7 @@ li {
   padding-block: 1%;
   font-size: 1.5vw;
   display: flex;
+  align-items: center;
   border-bottom: 1px solid #806060;
 }
 
@@ -163,9 +164,13 @@ li::before {
 }
 
 a {
+  width: 100%;
   text-decoration: none;
-  color: aliceblue;
+  color: #474242;
   font-size: 1.6vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
 }
 
 .content-list h2 {
@@ -173,5 +178,5 @@ a {
 }
 
 .content-list span {
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
