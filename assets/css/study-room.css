@@ -121,10 +121,6 @@
 
 
 
-
-
-
-
 #contents {
   position: absolute;
   width: 33%;
@@ -134,7 +130,6 @@
   padding-inline: 1%;
   border: 1px solid burlywood;
   background: rgb(255, 255, 255, 0.9);
-  color: #1781df;
   overflow: auto;
   /* display: none; */
 }
@@ -142,6 +137,7 @@
 #contents h1 {
   font-size: 2vw;
   text-align: center;
+  color: #1781df;
   border-bottom: 1px solid  #cea7a7;
 }
 
@@ -150,18 +146,18 @@ ol {
 }
 
 li {
+  color: #165d9b;
   padding-block: 1%;
   font-size: 1.5vw;
   display: flex;
   align-items: center;
-  gap: 2%;
+  gap: 3%;
   border-bottom: 1px solid #cea7a7;
 }
 
 li::before {
   counter-increment: list-counter;
   content: counter(list-counter) ".";
-  margin-right: 0.4vw;
 }
 
 .content a {
@@ -174,7 +170,7 @@ li::before {
   gap: 1%;
 }
 
-.content-list h2 {
+.content-list h3 {
   font-size: 1.8vw;
 }
 
