@@ -25,7 +25,7 @@ function login(e) {
   setLocalStorage("users", users)
 
   loginForm.reset();
-  window.location.href = `/?userId=${user.id}`;
+  window.location.href = `/Index.html?userId=${user.id}`;
 }
 
 function loginValidation(e, formObj) {

@@ -50,6 +50,8 @@ const studyRoomRepo = [
 ]
 
 const topFirstDoor = document.querySelector(".top-first-door");
+const content = document.querySelector("#contents");
+const contentList = document.querySelector(".content-list");
 
 topFirstDoor.addEventListener("click", listRepo);
 
@@ -59,9 +61,10 @@ function listRepo(e) {
   const q = studyRoomRepo.find(repo => repo.repoName == "top-first-door");
 
 
+  content.style.display = "block";
 
   
-  console.log(q.content[0].contentName,q.content[1].contentName,q.content[2].contentName);
+
 
 
 }
