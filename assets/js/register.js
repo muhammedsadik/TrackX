@@ -39,7 +39,7 @@ function registerUser(e) {
   setLocalStorage("users", users);
 
   registerForm.reset();
-  window.location.href = `/Index.html?userId=${userId}`;
+  window.location.href = `/index.html?userId=${userId}`;
 
   // TODO: index.js te veri bu şekilde alınacak.
   // const urlParams = new URLSearchParams(window.location.search);
