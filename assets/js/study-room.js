@@ -58,7 +58,11 @@ topFirstDoor.addEventListener("click", listRepo);
 function listRepo(e) {
   e.preventDefault();
 
-  const q = studyRoomRepo.find(repo => repo.repoName == "top-first-door");
+  const topFirstDoor = studyRoomRepo.find(repo => repo.repoName == "top-first-door");
+
+
+
+
 
 
   content.style.display = "block";

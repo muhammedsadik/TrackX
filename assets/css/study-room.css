@@ -135,10 +135,17 @@
 }
 
 #contents h1 {
+  cursor: pointer;
+  padding-block: 2%;
   font-size: 2.5vw;
   text-align: center;
   color: #1781df;
   border-bottom: 1px solid  #cea7a7;
+}
+
+#contents h1:hover{
+  background: rgba(204, 199, 199, 0.9);
+  border-radius: 15px;
 }
 
 ol {
@@ -179,6 +186,9 @@ li::before {
 }
 
 .delete {
+  /* display: none; /* Add Content in yanına düzenle işareti bırakıp sil butonunu saklarız oraya basınca gösterebiliriz*/
+  font-size: 3.5vw;
   padding-inline: 3%;
+  cursor: pointer;
   color: #fa3333;
 }
