@@ -123,10 +123,10 @@
 
 #contents {
   position: absolute;
-  width: 33%;
-  max-height: 33%;
-  top: 22%;
-  left: 38%;
+  width: 40%;
+  max-height: 44%;
+  top: 20%;
+  left: 33%;
   padding-inline: 1%;
   border: 1px solid burlywood;
   background: rgb(255, 255, 255, 0.9);
@@ -135,7 +135,7 @@
 }
 
 #contents h1 {
-  font-size: 2vw;
+  font-size: 2.5vw;
   text-align: center;
   color: #1781df;
   border-bottom: 1px solid  #cea7a7;
@@ -148,10 +148,10 @@ ol {
 li {
   color: #165d9b;
   padding-block: 1%;
-  font-size: 1.5vw;
+  font-size: 3vw;
   display: flex;
   align-items: center;
-  gap: 3%;
+  gap: 2%;
   border-bottom: 1px solid #cea7a7;
 }
 
@@ -164,20 +164,21 @@ li::before {
   width: 100%;
   text-decoration: none;
   color: #474242;
-  font-size: 1.6vw;
   display: flex;
   justify-content: space-between;
-  gap: 1%;
+  gap: 9%;
+  margin-right: 3%;
 }
 
-.content-list h3 {
-  font-size: 1.8vw;
+.content-list h4 {
+  font-size: 2.2vw;
 }
 
 .content-list span {
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 .delete {
+  padding-inline: 3%;
   color: #fa3333;
 }
