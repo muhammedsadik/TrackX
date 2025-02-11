@@ -131,7 +131,7 @@
   border: 1px solid burlywood;
   background: rgb(255, 255, 255, 0.9);
   overflow: auto;
-  /* display: none; */
+   display: none;/* */
 }
 
 #contents h1 {
