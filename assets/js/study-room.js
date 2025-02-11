@@ -1,74 +1,50 @@
-const studyRoomRepo = [
-  {
-    id: 1,
-    repoName: "top-first-door",
-    content: [
-      {
-        id: 1,
-        contentName: "Kalemlik",
-        addedAt: "01.01.2025",
-        description: "Siyah tükenmez kalem, kurşun kalem ve silgi."
-      },
-      {
-        id: 2,
-        contentName: "Cüzdan",
-        addedAt: "07.01.2025",
-        description: null
-      },
-      {
-        id: 3,
-        contentName: "Kulaklık",
-        addedAt: "19.02.2025",
-        description: "Telefon kulaklığı"
-      }
-    ]
-  },
-  {
-    id: 2,
-    repoName: "top-second-door",
-    content: [
-      {
-        id: 1,
-        contentName: "Parfüm",
-        addedAt: "03.01.2025",
-        description: null
-      },
-      {
-        id: 2,
-        contentName: "Kol Saati",
-        addedAt: "07.01.2025",
-        description: "Kahverengi kol saati"
-      },
-      {
-        id: 3,
-        contentName: "Akıllı Saat",
-        addedAt: "19.02.2025",
-        description: "Bordo renk Akıllı saat"
-      }
-    ]
-  }
-]
+import { studyRoomRepo } from "./localStorage.js";
+let contents = [];
+let doorContents;
 
-const topFirstDoor = document.querySelector(".top-first-door");
-const content = document.querySelector("#contents");
+const contentModal = document.querySelector("#contents");
 const contentList = document.querySelector(".content-list");
 
-topFirstDoor.addEventListener("click", listRepo);
+const topFirstDoor = document.querySelector(".top-first-door");
+const topSecondtDoor = document.querySelector(".top-second-door");
 
-function listRepo(e) {
-  e.preventDefault();
-
-  const topFirstDoor = studyRoomRepo.find(repo => repo.repoName == "top-first-door");
-
+topFirstDoor.addEventListener("click", () => listRepo("top-first-door"));
+topSecondtDoor.addEventListener("click", () => listRepo("top-second-door"));
 
 
+function listRepo(clickedDoor) {
+
+  doorContents = studyRoomRepo.find(repo => repo.repoName == clickedDoor).content;
+
+  contents = "";
+
+  doorContents.forEach(c => {
+    contents += `
+        <li class="content">
+          <a href="#">
+            <h4>${c.contentName}</h4>
+            <span>${c.addedAt}</span>
+          </a>
+          <i data-id="${c.id}" class="fa-solid fa-trash-can delete"></i>
+        </li>
+      `
+  });
+
+  contentList.innerHTML = contents;
+  contentModal.style.display = "block";
+
+  bindDeleteBtn(clickedDoor);
+}
+
+function bindDeleteBtn(clickedDoor) {
+  const deleteContentIcon = document.querySelectorAll('.delete');
+  deleteContentIcon.forEach(del => del.addEventListener('click', (e) => deleteContent(e, clickedDoor)));
+}
 
 
+function deleteContent(e, clickedDoor) {
+  doorContents = doorContents.filter(repo => repo.id != e.target.dataset.id);
+  studyRoomRepo.find(repo => repo.repoName == clickedDoor).content = doorContents
 
-  content.style.display = "block";
-
-  
-
-
-
+  listRepo(clickedDoor);
 }
