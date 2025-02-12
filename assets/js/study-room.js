@@ -33,7 +33,7 @@ function listRepo(clickedDoor) {
   contentList.innerHTML = contents;
   contentModal.showModal();
 
-  const closeBtn = document.querySelector('.close-btn')
+  document.querySelector('.close-btn')
   .addEventListener('click', () =>  contentModal.close());
   
   contentModal.addEventListener('click', (e) => {    
