@@ -20,18 +20,27 @@ function listRepo(clickedDoor) {
 
   doorContents.forEach(c => {
     contents += `
-        <li class="content">
-          <a href="#">
-            <h4>${c.contentName}</h4>
-            <span>${c.addedAt}</span>
-          </a>
-          <i data-id="${c.id}" class="fa-solid fa-trash-can delete"></i>
-        </li>
-      `
+      <li class="content">
+        <a href="#">
+          <h4>${c.contentName}</h4>
+          <span>${c.addedAt}</span>
+        </a>
+        <i data-id="${c.id}" class="fa-solid fa-trash-can delete"></i>
+      </li>    
+    `
   });
 
   contentList.innerHTML = contents;
-  contentModal.style.display = "block";
+  contentModal.showModal();
+
+  const closeBtn = document.querySelector('.close-btn')
+  .addEventListener('click', () =>  contentModal.close());
+  
+  contentModal.addEventListener('click', (e) => {    
+    if (e.target === contentModal) {
+      contentModal.close();
+    }
+  })
 
   bindDeleteBtn(clickedDoor);
 }
